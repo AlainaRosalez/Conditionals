@@ -50,7 +50,7 @@ if (favoritePhrase) {
 
 let tool = 'marker'; //originally just ''
 
-//todo Use short circuit evaluation to assign  writingUtensil variable below:
+//* Use short circuit evaluation to assign  writingUtensil variable below:
 
 let writingUtensil = tool || 'pen';
 console.log(`The ${writingUtensil} is mightier than the sword.`);
@@ -73,8 +73,51 @@ if (isCorrect) {
 }
 
 let favoritePhrase = 'Love That!';
-if (favoritePhrase === 'Love That!') {
+/*if (favoritePhrase === 'Love That!') {
     favoritePhrase ? console.log('I love that!') : console.log("I don't love that!");
 } else {
   console.log("I don't love that!");
+}*/
+favoritePhrase === 'Love That!' ? console.log('I love that!') : console.log("I don't love that!");
+
+
+//! Else If Statements
+
+let season = 'summer';
+if (season === 'spring') {
+  console.log('It\'s spring! The trees are budding!');
+} /*else {
+  console.log('Invalid season.');
+}*/
+} else if(season === 'winter') {
+  console.log('It\'s winter! Everything is covered in snow.');
+} else if(season === 'fall') {
+  console.log('It\'s fall! Leaves are falling!');
+} else if(season === 'summer') {
+  console.log('It\'s sunny and warm because it\'s summer!');
+} else {
+  console.log('Invalid season.');
+}
+
+
+//! The Switch keyword
+
+let athleteFinalPosition = 'first place';
+switch(athleteFinalPosition) {
+  case 'first place':
+  console.log('You get the gold medal!');
+  break;
+
+
+  case 'second place':
+  console.log('You get the silver medal!');
+  break;
+
+  case 'third place':
+  console.log('You get the bronze medal!');
+  break;
+
+  case 'default':
+    console.log('No medal awarded.')
+    break;
 }
